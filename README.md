@@ -1,4 +1,4 @@
-# Praveenperera
+# Praveen Perera
 
 To start your Phoenix app:
 

@@ -5,6 +5,11 @@
 # is restricted to this project.
 use Mix.Config
 
+
+# Configure using HAML
+config :phoenix, :template_engines,
+  haml: PhoenixHaml.Engine
+
 # Configures the endpoint
 config :praveenperera, Praveenperera.Endpoint,
   url: [host: "localhost"],
@@ -18,6 +23,8 @@ config :praveenperera, Praveenperera.Endpoint,
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
+
+
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
