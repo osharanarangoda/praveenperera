@@ -30,10 +30,9 @@ main {
 
 .splash .no-bottom-margin{
 	margin-bottom: 0;
-	margin-top: 5.5rem;
+	margin-top: 4rem;
+	padding-top: 2.5rem;
 	padding-bottom: 2.75rem;
-	padding-top: 2.75rem;
-
 }
 
 header .splash{
@@ -61,6 +60,9 @@ nav.no-color{
 }
 
 nav .nav-wrapper{
+	a.button-collapse{
+		padding-left: 1.2rem;
+	}
   ul.hide-on-med-and-down{
   	display: flex;
   	flex-flow: row;
@@ -73,6 +75,10 @@ nav .nav-wrapper{
 	        display: block;
 	        width: 100%;
 	        margin-top: -3px;
+
+	        &:hover{
+	        	color: #ff9800 !important;
+	        }
 	    }
   	}
   }
@@ -91,4 +97,20 @@ nav .nav-wrapper{
 		margin-right: 0.5rem;
 	}
 }
+
+footer.page-footer{
+	i.medium{
+		font-size: 1.5rem;
+		padding-right: 1.25rem;
+	}
+	i.medium.envelope-o{
+		font-size: 1rem;
+		padding-right: 0rem;
+	}
+
+	.container{
+		padding-bottom: 1.1rem;
+	}
+}
+
 

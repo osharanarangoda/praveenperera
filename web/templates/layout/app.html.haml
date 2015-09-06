@@ -11,7 +11,8 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-	%body
+		<link rel="shortcut icon" type="image/png" href="images/favicon.jpg">
+		%body
 		%header.header
 			%nav.no-color
 				.nav-wrapper.z-depth-0
@@ -19,22 +20,22 @@
 						%i.material-icons menu
 					%ul.hide-on-med-and-down
 						%li
-							%a{href: "sass.html"} about
+							%a{href: "#about"} about
 						%li
-							%a{href: "badges.html"} projects
+							%a{href: "#projects"} projects
 						%li
-							%a{href: "collapsible.html"} services
+							%a{href: "https://github.com/praveenperera"} github
 						%li
-							%a{href: "mobile.html"} contact
+							%a{href: "mailto:contact@praveenperera.com"} contact
 					%ul#mobile-demo.side-nav.left
 						%li
-							%a{href: "sass.html"} About
+							%a{href: "#about"} about
 						%li
-							%a{href: "badges.html"} Projects
+							%a{href: "#projects"} projects
 						%li
-							%a{href: "collapsible.html"} Services
+							%a{href: "https://github.com/praveenperera"} github
 						%li
-							%a{href: "mobile.html"} Contact
+							%a{href: "mailto:contact@praveenperera.com"} contact
 			.splash.z-depth-1
 				.container
 					.row
@@ -50,20 +51,22 @@
 				%p.alert.alert-info{role: "alert"}
 					=get_flash(@conn, :info)
 				%p.alert.alert-danger{role: "alert"}
-				=get_flash(@conn, :error)
+					=get_flash(@conn, :error)
 				=@inner
 		%footer.page-footer.purple.darken-4
-			.container
-				.row.center
-					.col.l12.s12
-						%h5.white-text Footer Content
-						%p.grey-text.text-lighten-4 You can use rows and columns here to organize your footer content.
-			.footer-copyright
-				.container
-					© 2015 praveenperera.com
-					%a.grey-text.text-lighten-4.right.center{href:"#!"}
+			.container.purple.darken-4
+				%span.white-text © 2015 praveenperera.com
+				%a.grey-text.text-lighten-4.right{href: "mailto:contact@praveenperera.com"}
+					&nbsp
+					%i.medium.fa.fa-envelope-o
+				%a.grey-text.text-lighten-4.right{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
+					&nbsp
+					%i.medium.fa.fa-linkedin
+				%a.grey-text.text-lighten-4.right{href: "http://github.com/praveenperera"}
+					&nbsp
+					%i.medium.fa.fa-github
 
 
-<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
 
+		<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
 
