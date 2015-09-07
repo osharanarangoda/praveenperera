@@ -40,8 +40,8 @@ $dropdown-hover-bg-color: #eee !default;
 $dropdown-color: $secondary-color !default;
 
 /*** Fonts ***/
-$roboto-font-path: "../font/roboto/" !default;
-$icons-font-path: "../font/material-design-icons/" !default;
+$roboto-font-path: "../fonts/roboto/" !default;
+$icons-font-path: "../fonts/material-design-icons/" !default;
 
 /*** Forms ***/
 // Text Inputs + Textarea
@@ -81,12 +81,17 @@ $large-screen-up: 1201px !default;
 $small-screen: 600px !default;
 $medium-screen: 992px !default;
 $large-screen: 1200px !default;
+$medium-large-screen: 1140px !default;
 
 $medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
 $large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
 $small-and-down: "only screen and (max-width : #{$small-screen})" !default;
 $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+$medium-large-and-down: "only screen and (max-width : #{$medium-large-screen})" !default;
+$medium-large-and-up: "only screen and (min-width : #{$medium-large-screen})" !default;
+
 
 // Grid Variables
 $num-cols: 12 !default;

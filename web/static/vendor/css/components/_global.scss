@@ -242,6 +242,18 @@ ul.staggered-list li {
 /*********************
   Media Query Classes
 **********************/
+.hide-on-medium-large-and-down{
+  @media #{$medium-large-and-down} {
+    display: none !important;
+  }
+}
+
+.hide-on-medium-large-and-up{
+  @media #{$medium-large-and-up} {
+    display: none !important;
+  }
+}
+
 .hide-on-small-only, .hide-on-small-and-down {
   @media #{$small-and-down} {
     display: none !important;

@@ -2748,6 +2748,14 @@ ul.staggered-list li {
 /*********************
   Media Query Classes
 **********************/
+@media only screen and (max-width : 1140px) {
+  .hide-on-medium-large-and-down {
+    display: none !important; } }
+
+@media only screen and (min-width : 1140px) {
+  .hide-on-medium-large-and-up {
+    display: none !important; } }
+
 @media only screen and (max-width : 600px) {
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important; } }
@@ -2792,12 +2800,12 @@ ul.staggered-list li {
   .center-on-small-only {
     text-align: center; } }
 
-/* line 305, web/static/vendor/css/components/_global.scss */
+/* line 317, web/static/vendor/css/components/_global.scss */
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #ee6e73; }
-  /* line 310, web/static/vendor/css/components/_global.scss */
+  /* line 322, web/static/vendor/css/components/_global.scss */
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
@@ -2805,42 +2813,42 @@ footer.page-footer {
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(51, 51, 51, 0.08); }
 
-/* line 321, web/static/vendor/css/components/_global.scss */
+/* line 333, web/static/vendor/css/components/_global.scss */
 table, th, td {
   border: none; }
 
-/* line 325, web/static/vendor/css/components/_global.scss */
+/* line 337, web/static/vendor/css/components/_global.scss */
 table {
   width: 100%;
   display: table; }
-  /* line 330, web/static/vendor/css/components/_global.scss */
+  /* line 342, web/static/vendor/css/components/_global.scss */
   table.bordered > thead > tr, table.bordered > tbody > tr {
     border-bottom: 1px solid #d0d0d0; }
-  /* line 335, web/static/vendor/css/components/_global.scss */
+  /* line 347, web/static/vendor/css/components/_global.scss */
   table.striped > tbody > tr:nth-child(odd) {
     background-color: #f2f2f2; }
-  /* line 339, web/static/vendor/css/components/_global.scss */
+  /* line 351, web/static/vendor/css/components/_global.scss */
   table.striped > tbody > tr > td {
     border-radius: 0px; }
-  /* line 344, web/static/vendor/css/components/_global.scss */
+  /* line 356, web/static/vendor/css/components/_global.scss */
   table.hoverable > tbody > tr {
     -webkit-transition: background-color .25s ease;
     -moz-transition: background-color .25s ease;
     -o-transition: background-color .25s ease;
     -ms-transition: background-color .25s ease;
     transition: background-color .25s ease; }
-    /* line 346, web/static/vendor/css/components/_global.scss */
+    /* line 358, web/static/vendor/css/components/_global.scss */
     table.hoverable > tbody > tr:hover {
       background-color: #f2f2f2; }
-  /* line 352, web/static/vendor/css/components/_global.scss */
+  /* line 364, web/static/vendor/css/components/_global.scss */
   table.centered thead tr th, table.centered tbody tr td {
     text-align: center; }
 
-/* line 360, web/static/vendor/css/components/_global.scss */
+/* line 372, web/static/vendor/css/components/_global.scss */
 thead {
   border-bottom: 1px solid #d0d0d0; }
 
-/* line 364, web/static/vendor/css/components/_global.scss */
+/* line 376, web/static/vendor/css/components/_global.scss */
 td, th {
   padding: 15px 5px;
   display: table-cell;
@@ -2849,7 +2857,7 @@ td, th {
   border-radius: 2px; }
 
 @media only screen and (max-width : 992px) {
-  /* line 375, web/static/vendor/css/components/_global.scss */
+  /* line 387, web/static/vendor/css/components/_global.scss */
   table.responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -2857,87 +2865,87 @@ td, th {
     display: block;
     position: relative;
     /* sort out borders */ }
-    /* line 383, web/static/vendor/css/components/_global.scss */
+    /* line 395, web/static/vendor/css/components/_global.scss */
     table.responsive-table th, table.responsive-table td {
       margin: 0;
       vertical-align: top; }
-    /* line 388, web/static/vendor/css/components/_global.scss */
+    /* line 400, web/static/vendor/css/components/_global.scss */
     table.responsive-table th {
       text-align: left; }
-    /* line 389, web/static/vendor/css/components/_global.scss */
+    /* line 401, web/static/vendor/css/components/_global.scss */
     table.responsive-table thead {
       display: block;
       float: left; }
-      /* line 393, web/static/vendor/css/components/_global.scss */
+      /* line 405, web/static/vendor/css/components/_global.scss */
       table.responsive-table thead tr {
         display: block;
         padding: 0 10px 0 0; }
-        /* line 397, web/static/vendor/css/components/_global.scss */
+        /* line 409, web/static/vendor/css/components/_global.scss */
         table.responsive-table thead tr th::before {
           content: "\00a0"; }
-    /* line 402, web/static/vendor/css/components/_global.scss */
+    /* line 414, web/static/vendor/css/components/_global.scss */
     table.responsive-table tbody {
       display: block;
       width: auto;
       position: relative;
       overflow-x: auto;
       white-space: nowrap; }
-      /* line 409, web/static/vendor/css/components/_global.scss */
+      /* line 421, web/static/vendor/css/components/_global.scss */
       table.responsive-table tbody tr {
         display: inline-block;
         vertical-align: top; }
-    /* line 414, web/static/vendor/css/components/_global.scss */
+    /* line 426, web/static/vendor/css/components/_global.scss */
     table.responsive-table th {
       display: block;
       text-align: right; }
-    /* line 418, web/static/vendor/css/components/_global.scss */
+    /* line 430, web/static/vendor/css/components/_global.scss */
     table.responsive-table td {
       display: block;
       min-height: 1.25em;
       text-align: left; }
-    /* line 423, web/static/vendor/css/components/_global.scss */
+    /* line 435, web/static/vendor/css/components/_global.scss */
     table.responsive-table tr {
       padding: 0 10px; }
-    /* line 426, web/static/vendor/css/components/_global.scss */
+    /* line 438, web/static/vendor/css/components/_global.scss */
     table.responsive-table thead {
       border: 0;
       border-right: 1px solid #d0d0d0; }
-    /* line 432, web/static/vendor/css/components/_global.scss */
+    /* line 444, web/static/vendor/css/components/_global.scss */
     table.responsive-table.bordered th {
       border-bottom: 0;
       border-left: 0; }
-    /* line 433, web/static/vendor/css/components/_global.scss */
+    /* line 445, web/static/vendor/css/components/_global.scss */
     table.responsive-table.bordered td {
       border-left: 0;
       border-right: 0;
       border-bottom: 0; }
-    /* line 434, web/static/vendor/css/components/_global.scss */
+    /* line 446, web/static/vendor/css/components/_global.scss */
     table.responsive-table.bordered tr {
       border: 0; }
-    /* line 435, web/static/vendor/css/components/_global.scss */
+    /* line 447, web/static/vendor/css/components/_global.scss */
     table.responsive-table.bordered tbody tr {
       border-right: 1px solid #d0d0d0; } }
 
-/* line 444, web/static/vendor/css/components/_global.scss */
+/* line 456, web/static/vendor/css/components/_global.scss */
 .collection {
   margin: 0.5rem 0 1rem 0;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   overflow: hidden;
   position: relative; }
-  /* line 451, web/static/vendor/css/components/_global.scss */
+  /* line 463, web/static/vendor/css/components/_global.scss */
   .collection .collection-item {
     background-color: #fff;
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0;
     border-bottom: 1px solid #e0e0e0; }
-    /* line 459, web/static/vendor/css/components/_global.scss */
+    /* line 471, web/static/vendor/css/components/_global.scss */
     .collection .collection-item.avatar {
       min-height: 84px;
       padding-left: 72px;
       position: relative; }
-      /* line 464, web/static/vendor/css/components/_global.scss */
+      /* line 476, web/static/vendor/css/components/_global.scss */
       .collection .collection-item.avatar .circle {
         position: absolute;
         width: 42px;
@@ -2946,32 +2954,32 @@ td, th {
         left: 15px;
         display: inline-block;
         vertical-align: middle; }
-      /* line 473, web/static/vendor/css/components/_global.scss */
+      /* line 485, web/static/vendor/css/components/_global.scss */
       .collection .collection-item.avatar i.circle {
         font-size: 18px;
         line-height: 42px;
         color: #fff;
         background-color: #999;
         text-align: center; }
-      /* line 482, web/static/vendor/css/components/_global.scss */
+      /* line 494, web/static/vendor/css/components/_global.scss */
       .collection .collection-item.avatar .title {
         font-size: 16px; }
-      /* line 486, web/static/vendor/css/components/_global.scss */
+      /* line 498, web/static/vendor/css/components/_global.scss */
       .collection .collection-item.avatar p {
         margin: 0; }
-      /* line 490, web/static/vendor/css/components/_global.scss */
+      /* line 502, web/static/vendor/css/components/_global.scss */
       .collection .collection-item.avatar .secondary-content {
         position: absolute;
         top: 16px;
         right: 16px; }
-    /* line 499, web/static/vendor/css/components/_global.scss */
+    /* line 511, web/static/vendor/css/components/_global.scss */
     .collection .collection-item:last-child {
       border-bottom: none; }
-    /* line 503, web/static/vendor/css/components/_global.scss */
+    /* line 515, web/static/vendor/css/components/_global.scss */
     .collection .collection-item.active {
       background-color: #26a69a;
       color: #eafaf9; }
-  /* line 508, web/static/vendor/css/components/_global.scss */
+  /* line 520, web/static/vendor/css/components/_global.scss */
   .collection a.collection-item {
     display: block;
     -webkit-transition: 0.25s;
@@ -2980,27 +2988,27 @@ td, th {
     -ms-transition: 0.25s;
     transition: 0.25s;
     color: #26a69a; }
-    /* line 513, web/static/vendor/css/components/_global.scss */
+    /* line 525, web/static/vendor/css/components/_global.scss */
     .collection a.collection-item:not(.active):hover {
       background-color: #ddd; }
-  /* line 520, web/static/vendor/css/components/_global.scss */
+  /* line 532, web/static/vendor/css/components/_global.scss */
   .collection.with-header .collection-header {
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
     padding: 10px 20px; }
-  /* line 525, web/static/vendor/css/components/_global.scss */
+  /* line 537, web/static/vendor/css/components/_global.scss */
   .collection.with-header .collection-item {
     padding-left: 30px; }
-  /* line 528, web/static/vendor/css/components/_global.scss */
+  /* line 540, web/static/vendor/css/components/_global.scss */
   .collection.with-header .collection-item.avatar {
     padding-left: 72px; }
 
-/* line 535, web/static/vendor/css/components/_global.scss */
+/* line 547, web/static/vendor/css/components/_global.scss */
 .secondary-content {
   float: right;
   color: #26a69a; }
 
-/* line 542, web/static/vendor/css/components/_global.scss */
+/* line 554, web/static/vendor/css/components/_global.scss */
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -3013,28 +3021,28 @@ span.badge {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  /* line 553, web/static/vendor/css/components/_global.scss */
+  /* line 565, web/static/vendor/css/components/_global.scss */
   span.badge.new {
     font-weight: 300;
     font-size: 0.8rem;
     color: #fff;
     background-color: #26a69a;
     border-radius: 2px; }
-  /* line 560, web/static/vendor/css/components/_global.scss */
+  /* line 572, web/static/vendor/css/components/_global.scss */
   span.badge.new:after {
     content: " new"; }
 
-/* line 566, web/static/vendor/css/components/_global.scss */
+/* line 578, web/static/vendor/css/components/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden; }
-  /* line 572, web/static/vendor/css/components/_global.scss */
+  /* line 584, web/static/vendor/css/components/_global.scss */
   .video-container.no-controls {
     padding-top: 0; }
-  /* line 576, web/static/vendor/css/components/_global.scss */
+  /* line 588, web/static/vendor/css/components/_global.scss */
   .video-container iframe, .video-container object, .video-container embed {
     position: absolute;
     top: 0;
@@ -3042,7 +3050,7 @@ span.badge {
     width: 100%;
     height: 100%; }
 
-/* line 586, web/static/vendor/css/components/_global.scss */
+/* line 598, web/static/vendor/css/components/_global.scss */
 .progress {
   position: relative;
   height: 4px;
@@ -3052,7 +3060,7 @@ span.badge {
   border-radius: 2px;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden; }
-  /* line 595, web/static/vendor/css/components/_global.scss */
+  /* line 607, web/static/vendor/css/components/_global.scss */
   .progress .determinate {
     position: absolute;
     background-color: inherit;
@@ -3065,10 +3073,10 @@ span.badge {
     -o-transition: width .3s linear;
     -ms-transition: width .3s linear;
     transition: width .3s linear; }
-  /* line 604, web/static/vendor/css/components/_global.scss */
+  /* line 616, web/static/vendor/css/components/_global.scss */
   .progress .indeterminate {
     background-color: #26a69a; }
-    /* line 606, web/static/vendor/css/components/_global.scss */
+    /* line 618, web/static/vendor/css/components/_global.scss */
     .progress .indeterminate:before {
       content: '';
       position: absolute;
@@ -3082,7 +3090,7 @@ span.badge {
       -ms-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
       -o-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
       animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
-    /* line 618, web/static/vendor/css/components/_global.scss */
+    /* line 630, web/static/vendor/css/components/_global.scss */
     .progress .indeterminate:after {
       content: '';
       position: absolute;
@@ -3103,97 +3111,97 @@ span.badge {
       animation-delay: 1.15s; }
 
 @-webkit-keyframes indeterminate {
-  /* line 633, web/static/vendor/css/components/_global.scss */
+  /* line 645, web/static/vendor/css/components/_global.scss */
   0% {
     left: -35%;
     right: 100%; }
 
-  /* line 637, web/static/vendor/css/components/_global.scss */
+  /* line 649, web/static/vendor/css/components/_global.scss */
   60% {
     left: 100%;
     right: -90%; }
 
-  /* line 641, web/static/vendor/css/components/_global.scss */
+  /* line 653, web/static/vendor/css/components/_global.scss */
   100% {
     left: 100%;
     right: -90%; } }
 
 @-moz-keyframes indeterminate {
-  /* line 633, web/static/vendor/css/components/_global.scss */
+  /* line 645, web/static/vendor/css/components/_global.scss */
   0% {
     left: -35%;
     right: 100%; }
 
-  /* line 637, web/static/vendor/css/components/_global.scss */
+  /* line 649, web/static/vendor/css/components/_global.scss */
   60% {
     left: 100%;
     right: -90%; }
 
-  /* line 641, web/static/vendor/css/components/_global.scss */
+  /* line 653, web/static/vendor/css/components/_global.scss */
   100% {
     left: 100%;
     right: -90%; } }
 
 @keyframes indeterminate {
-  /* line 633, web/static/vendor/css/components/_global.scss */
+  /* line 645, web/static/vendor/css/components/_global.scss */
   0% {
     left: -35%;
     right: 100%; }
 
-  /* line 637, web/static/vendor/css/components/_global.scss */
+  /* line 649, web/static/vendor/css/components/_global.scss */
   60% {
     left: 100%;
     right: -90%; }
 
-  /* line 641, web/static/vendor/css/components/_global.scss */
+  /* line 653, web/static/vendor/css/components/_global.scss */
   100% {
     left: 100%;
     right: -90%; } }
 
 @-webkit-keyframes indeterminate-short {
-  /* line 648, web/static/vendor/css/components/_global.scss */
+  /* line 660, web/static/vendor/css/components/_global.scss */
   0% {
     left: -200%;
     right: 100%; }
 
-  /* line 652, web/static/vendor/css/components/_global.scss */
+  /* line 664, web/static/vendor/css/components/_global.scss */
   60% {
     left: 107%;
     right: -8%; }
 
-  /* line 656, web/static/vendor/css/components/_global.scss */
+  /* line 668, web/static/vendor/css/components/_global.scss */
   100% {
     left: 107%;
     right: -8%; } }
 
 @-moz-keyframes indeterminate-short {
-  /* line 648, web/static/vendor/css/components/_global.scss */
+  /* line 660, web/static/vendor/css/components/_global.scss */
   0% {
     left: -200%;
     right: 100%; }
 
-  /* line 652, web/static/vendor/css/components/_global.scss */
+  /* line 664, web/static/vendor/css/components/_global.scss */
   60% {
     left: 107%;
     right: -8%; }
 
-  /* line 656, web/static/vendor/css/components/_global.scss */
+  /* line 668, web/static/vendor/css/components/_global.scss */
   100% {
     left: 107%;
     right: -8%; } }
 
 @keyframes indeterminate-short {
-  /* line 648, web/static/vendor/css/components/_global.scss */
+  /* line 660, web/static/vendor/css/components/_global.scss */
   0% {
     left: -200%;
     right: 100%; }
 
-  /* line 652, web/static/vendor/css/components/_global.scss */
+  /* line 664, web/static/vendor/css/components/_global.scss */
   60% {
     left: 107%;
     right: -8%; }
 
-  /* line 656, web/static/vendor/css/components/_global.scss */
+  /* line 668, web/static/vendor/css/components/_global.scss */
   100% {
     left: 107%;
     right: -8%; } }
@@ -3201,31 +3209,31 @@ span.badge {
 /*******************
   Utility Classes
 *******************/
-/* line 667, web/static/vendor/css/components/_global.scss */
+/* line 679, web/static/vendor/css/components/_global.scss */
 .hide {
   display: none !important; }
 
-/* line 672, web/static/vendor/css/components/_global.scss */
+/* line 684, web/static/vendor/css/components/_global.scss */
 .left-align {
   text-align: left; }
 
-/* line 675, web/static/vendor/css/components/_global.scss */
+/* line 687, web/static/vendor/css/components/_global.scss */
 .right-align {
   text-align: right; }
 
-/* line 678, web/static/vendor/css/components/_global.scss */
+/* line 690, web/static/vendor/css/components/_global.scss */
 .center, .center-align {
   text-align: center; }
 
-/* line 682, web/static/vendor/css/components/_global.scss */
+/* line 694, web/static/vendor/css/components/_global.scss */
 .left {
   float: left !important; }
 
-/* line 685, web/static/vendor/css/components/_global.scss */
+/* line 697, web/static/vendor/css/components/_global.scss */
 .right {
   float: right !important; }
 
-/* line 690, web/static/vendor/css/components/_global.scss */
+/* line 702, web/static/vendor/css/components/_global.scss */
 .no-select, input[type=range], input[type=range] + .thumb {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -3234,30 +3242,30 @@ span.badge {
   -ms-user-select: none;
   user-select: none; }
 
-/* line 699, web/static/vendor/css/components/_global.scss */
+/* line 711, web/static/vendor/css/components/_global.scss */
 .circle {
   border-radius: 50%; }
 
-/* line 703, web/static/vendor/css/components/_global.scss */
+/* line 715, web/static/vendor/css/components/_global.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 709, web/static/vendor/css/components/_global.scss */
+/* line 721, web/static/vendor/css/components/_global.scss */
 .truncate {
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
 
-/* line 716, web/static/vendor/css/components/_global.scss */
+/* line 728, web/static/vendor/css/components/_global.scss */
 .no-padding {
   padding: 0 !important; }
 
 @font-face {
   font-family: "Material-Design-Icons";
-  src: url("../font/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("../font/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../font/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../font/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../font/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
+  src: url("../fonts/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("../fonts/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../fonts/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../fonts/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../fonts/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -6971,27 +6979,27 @@ nav {
 
 @font-face {
   font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
+  src: url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
   font-weight: 200; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Light.woff2") format("woff2"), url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.ttf") format("truetype");
+  src: url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Regular.woff2") format("woff2"), url("../font/roboto/Roboto-Regular.woff") format("woff"), url("../font/roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Medium.woff2") format("woff2"), url("../font/roboto/Roboto-Medium.woff") format("woff"), url("../font/roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500; }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Bold.woff2") format("woff2"), url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700; }
 
 /* line 1, web/static/vendor/css/components/_typography.scss */
@@ -10238,7 +10246,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media only screen and (min-width : 601px) {
   /* line 46, stdin */
   .container {
-    width: 80%; } }
+    width: 85%; } }
 
 /* line 6, stdin */
 .btn-block {
