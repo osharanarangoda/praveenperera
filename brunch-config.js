@@ -26,7 +26,7 @@ exports.config = {
       joinTo: 'css/app.css',
       order: {
         before: [
-          'web/static/vendor/css/materialize.css',
+          'web/static/vendor/css/materialize.scss',
         ]
       }
     },
