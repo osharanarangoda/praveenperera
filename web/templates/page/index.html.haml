@@ -4,7 +4,7 @@
 		%h4 About
 		%a{name: "about"}
 		%p My name is Praveen Perera and I am a full stack developer residing in Toronto, ON, Canada. I started developing simple websites with vanilla HTML/CSS and javascript 5 years ago. I also have 3 years of experience with Ruby and Ruby on Rails. And recently I have been exploring functional programming with Elixir and the Phoenix Framework. In fact this website is my first Elixir/Phoenix project.
-		.social-buttons
+		.social-buttons.hide-on-small-only
 			%a.waves-effect.waves-light.btn.purple.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
 				%i.fa.fa-github.left
 				Github
@@ -12,6 +12,16 @@
 				%i.fa.fa-linkedin-square.left
 				LinkedIn
 			%a.waves-effect.waves-light.btn.purple.darken-4{href: "mailto:contact@praveenperera.com"}
+				%i.fa.fa-envelope-square.left
+				Email
+		.social-buttons.hide-on-med-and-up
+			%a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
+				%i.fa.fa-github.left
+				Github
+			%a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
+				%i.fa.fa-linkedin-square.left
+				LinkedIn
+			%a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "mailto:contact@praveenperera.com"}
 				%i.fa.fa-envelope-square.left
 				Email
 		%br
@@ -44,7 +54,7 @@
 				%p
 					I am a very simple card. I am good at containing small bits of information.
 					I am convenient because I require little markup to use effectively.
-			.card-action
+			.card-action.hide-on-small-only
 				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "#"}
 					%i.fa.fa-camera-retro.left
 					Preview
@@ -54,6 +64,16 @@
 				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "https://github.com/praveenperera/qrideshare"}
 					%i.fa.fa-file-code-o.left
 					Code
+			.card-action.hide-on-med-and-up
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "#"}
+					%i.fa.fa-camera-retro.left
+					Preview
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "http://qrideshare.praveenperera.com"}
+					%i.fa.fa-safari.left
+					Demo
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "https://github.com/praveenperera/qrideshare"}
+					%i.fa.fa-file-code-o.left
+					Code
 	.col.s12.l6
 		.card
 			.card-content.black-text
@@ -61,7 +81,7 @@
 				%p
 					I am a very simple card. I am good at containing small bits of information.
 					I am convenient because I require little markup to use effectively.
-			.card-action
+			.card-action.hide-on-small-only
 				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "#"}
 					%i.fa.fa-camera-retro.left
 					Preview
@@ -69,6 +89,16 @@
 					%i.fa.fa-safari.left
 					Demo
 				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "https://github.com/praveenperera/videolearning"}
+					%i.fa.fa-file-code-o.left
+					Code
+			.card-action.hide-on-med-and-up
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "#"}
+					%i.fa.fa-camera-retro.left
+					Preview
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "http://videolearning.praveenperera.com"}
+					%i.fa.fa-safari.left
+					Demo
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "https://github.com/praveenperera/videolearning"}
 					%i.fa.fa-file-code-o.left
 					Code
 .row.center
