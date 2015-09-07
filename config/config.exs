@@ -12,7 +12,7 @@ config :phoenix, :template_engines,
 
 # Configures the endpoint
 config :praveenperera, Praveenperera.Endpoint,
-  url: [host: "praveenpere"],
+  url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "xPcRjWlVU8RRMkQXNXp4zLkP0mfG8hkhVh6/gJ1epoAdsT9HmmYDRyYAWvoeIren",
   render_errors: [accepts: ~w(html json)],
