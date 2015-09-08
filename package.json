@@ -5,12 +5,8 @@
     "brunch": "^1.8.5",
     "css-brunch": ">= 1.0 < 1.8",
     "javascript-brunch": ">= 1.0 < 1.8",
-    "postcss-brunch": "^0.5.0",
+    "pleeease-brunch": "^2.0.1",
     "sass-brunch": "^1.8.11",
     "uglify-js-brunch": ">= 1.0 < 1.8"
-  },
-  "devDependencies": {
-    "autoprefixer": "^6.0.2",
-    "csswring": "^4.0.0"
   }
 }
