@@ -1,10 +1,12 @@
 .row
 .row
 	.col.l7.s12
-
 		%h4 About
 		%a{name: "about"}
-		%p My name is Praveen Perera and I am a full stack developer residing in Toronto, ON, Canada. I started developing simple websites with vanilla HTML/CSS and javascript 5 years ago. I also have 3 years of experience with Ruby and Ruby on Rails. And recently I have been exploring functional programming with Elixir and the Phoenix Framework. In fact this website is my first Elixir/Phoenix project.
+		%p My name is Praveen Perera and I am a full stack developer residing in Oakville, ON, Canada. I started developing simple websites with vanilla HTML/CSS and javascript 5 years ago. I also have 3 years of development experience with Ruby and Ruby on Rails.
+
+		Recently I have been exploring functional programming with <a href="http://elixir-lang.org">Elixir</a> and the <a href="http://www.phoenixframework.org">Phoenix Framework</a>.	In fact this website is my first Elixir/Phoenix project. The <a href="https://github.com/praveenperera/praveenperera">code for this website</a> can be found on my Github along with some of my other projects.
+		%p
 		.social-buttons.hide-on-small-only
 			%a.waves-effect.waves-light.btn.purple.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
 				%i.fa.fa-github.left
@@ -40,7 +42,7 @@
 				contact@praveenperera.com
 			%li.collection-item
 				%b Location:  &nbsp
-				Toronto, Canada
+				Oakville, Canada
 			%li.collection-item
 				%b Alma Mater: &nbsp
 				Queen's University
@@ -56,9 +58,13 @@
 					Platform for Queen's University students to share rides between home and kingston, or anywhere in between. Built with Ruby on Rails, Bootstrap 3
 					used on the frontend. Compelete with email typing messaging system.
 			.card-action.hide-on-medium-large-and-down
-				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "#"}
+				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/qride/home.png", data-lightbox: "qride", data-title: "This is the home page, it has a list of available rides. You can also search for rides, post a ride, or a join a ride."}
 					%i.fa.fa-camera-retro.left
 					Preview
+				%a.lightbox-gallery-image{href: "images/screenshots/qride/post_ride.png", data-lightbox: "qride", data-title: "From this page you can post a ride and add a description."}
+				%a.lightbox-gallery-image{href: "images/screenshots/qride/convos.png", data-lightbox: "qride", data-title: "There is a fully functional conversations page so you can contact other users."}
+				%a.lightbox-gallery-image{href: "images/screenshots/qride/signup.png", data-lightbox: "qride", data-title: "Sign up page"}
+				%a.lightbox-gallery-image{href: "images/screenshots/qride/login.png", data-lightbox: "qride", data-title: "Login page"}
 				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "http://qrideshare.praveenperera.com"}
 					%i.fa.fa-safari.left
 					Demo
@@ -66,9 +72,13 @@
 					%i.fa.fa-file-code-o.left
 					Code
 			.card-action.hide-on-medium-large-and-up
-				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "#"}
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/qride/home.png", data-lightbox: "qride mobile", data-title: "This is the home page, it has a list of available rides. You can also search for rides, post a ride, or a join a ride."}
 					%i.fa.fa-camera-retro.left
 					Preview
+				%a.lightbox-gallery-image{href: "images/screenshots/qride/post_ride.png", data-lightbox: "qride mobile", data-title: "From this page you can post a ride and add a description"}
+				%a.lightbox-gallery-image{href: "images/screenshots/qride/convos.png", data-lightbox: "qride mobile", data-title: "There is a fully functional conversations page so you can contact other users"}
+				%a.lightbox-gallery-image{href: "images/screenshots/qride/signup.png", data-lightbox: "qride mobile", data-title: "Sign up page"}
+				%a.lightbox-gallery-image{href: "images/screenshots/qride/login.png", data-lightbox: "qride mobile", data-title: "Login page"}
 				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "http://qrideshare.praveenperera.com"}
 					%i.fa.fa-safari.left
 					Demo
@@ -83,17 +93,25 @@
 					Platform to launch free and paid video courses. Built with Ruby on Rails and MaterializeCSS in the front end. Complete with stripe payments,
 					3rd party authentication system and simple CMS to manage video courses.
 			.card-action.hide-on-medium-large-and-down
-				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "#"}
+				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/vl/project.png", data-lightbox: "video learning", data-title: "The course page, includes description, reviews and overall rating of the course. Also includes the price with a link to join the project. Stripe is used for payments"}
 					%i.fa.fa-camera-retro.left
 					Preview
+				%a.lightbox-gallery-image{href: "images/screenshots/vl/task.png", data-lightbox: "video learning", data-title: "Course page, contains all the videos and text tutorials"}
+				%a.lightbox-gallery-image{href: "images/screenshots/vl/courses.png", data-lightbox: "video learning", data-title: "Contains the full course catalog"}
+				%a.lightbox-gallery-image{href: "images/screenshots/vl/discussions.png", data-lightbox: "video learning", data-title: "Discussions page using disqus"}
+				%a.lightbox-gallery-image{href: "images/screenshots/vl/signup.png", data-lightbox: "video learning", data-title: "Sign up page, sign up using email, facebook, google or github"}
 				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "https://github.com/praveenperera/videolearning"}
 					%i.fa.fa-file-code-o.left
 					Code
 
 			.card-action.hide-on-medium-large-and-up
-				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "#"}
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/vl/project.png", data-lightbox: "video learning mobile", data-title: "The course page, includes description, reviews and overall rating of the course. Also includes the price with a link to join the project. Stripe is used for payments"}
 					%i.fa.fa-camera-retro.left
 					Preview
+				%a.lightbox-gallery-image{href: "images/screenshots/vl/task.png", data-lightbox: "video learning mobile", data-title: "Course page, contains all the videos and text tutorials"}
+				%a.lightbox-gallery-image{href: "images/screenshots/vl/courses.png", data-lightbox: "video learning mobile", data-title: "Contains the full course catalog"}
+				%a.lightbox-gallery-image{href: "images/screenshots/vl/discussions.png", data-lightbox: "video learning mobile", data-title: "Discussions page using disqus"}
+				%a.lightbox-gallery-image{href: "images/screenshots/vl/signup.png", data-lightbox: "video learning mobile", data-title: "Sign up page, sign up using email, facebook, google or github"}
 				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "https://github.com/praveenperera/videolearning"}
 					%i.fa.fa-file-code-o.left
 					Code
