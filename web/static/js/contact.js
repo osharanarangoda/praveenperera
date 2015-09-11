@@ -18,7 +18,7 @@ jQuery(function($)
                     'headers': {
                         'Reply-To': email
                     },
-                    'subject': 'Website Contact Form Submission' + ' ' + name + ' - ' + email,
+                    'subject': 'Website Contact Form Submission' + ' -- Name:  ' + name + ' | Email: ' + email,
                     'text': msg,
                     'to': [
                     {
