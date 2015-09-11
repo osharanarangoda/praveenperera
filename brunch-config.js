@@ -8,8 +8,10 @@ exports.config = {
       // joinTo: {
       //  'js/app.js': /^(web\/static\/js)/,
       //  'js/vendor.js': /^(web\/static\/vendor)|(deps)/,
-      //  'js/namespace.js': /^app(\/|\\)namespace/,
-      //  'js/app.js': /^app(\/|\\)(?!namespace)/
+      //
+      //  //*namespacing*//
+      //    'js/namespace.js': /^app(\/|\\)namespace/,
+      //    'js/app.js': /^app(\/|\\)(?!namespace)/  //*'?!'' is a negative look ahead*//
       //}
       //
       // To change the order of concatenation of files, explicitly mention here
