@@ -48,7 +48,7 @@
 				Queen's University
 			%li.collection-item
 				%b Skills:&nbsp
-				Ruby, Ruby on Rails, Elixir, Phoenix, PostgreSQL, JS/jQuery, React.js, HTML/CSS, Sass, Brunch.io, Bootstrap, MaterializeCSS, Semantic UI
+				Ruby, Ruby on Rails, Elixir, Phoenix, TDD, PostgreSQL, JS/jQuery, React.js, HTML/CSS, Sass, Brunch.io, Bootstrap, MaterializeCSS, Semantic UI
 .row
 	.col.s12
 		%a{name: "projects"}
@@ -122,8 +122,34 @@
 		%a.waves-effect.waves-light.btn.btn-large.white-text.orange.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
 			%i.fa.fa-github.left
 			View All Repositories
--# .row
--# 	.col.s12
--# 		%h4 Contact
--# 		%a.waves-effect.waves-light.btn.btn-large.white-text.purple.darken-4{href:"https://github.com/praveenperera?tab=repositories"} View All Repositories
+
+.row
+	.col.l12.s12
+		%a{name: "contact"}
+		%h4 Contact
+	.col.s8
+		%p Use the contact form below to get in touch, I will reply as soon as possible. Have any questions? Need some website work or application development done? Let me know! I look forward to hearing from you!
+	%form.col.s8#contact_form{target: "_self"}
+		.row
+			.input-field.col.s12
+				%input#name{type: "text"}
+				%label{for: "name"} Name
+		.row
+			.input-field.col.s12
+				%input#email{type: "text"}
+				%label{for: "email"} Your Email Address
+		.row
+			.input-field.col.s12
+				%input#subject{type: "text"}
+				%label{for: "subject"} Subject
+		.row
+			.input-field.col.s12
+				%textarea.materialize-textarea#message{type: "textarea"}
+				%label{for: "subject"} Message
+		.row
+			.input-field.col.s12
+				%label.col-md-4.control-label{for: "submit"}
+				%button#submit.btn.orange.darken-4{name: "submit"}
+					Send Message
+					%i.mdi-content-send.right
 

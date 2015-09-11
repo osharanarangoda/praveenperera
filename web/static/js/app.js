@@ -20,7 +20,8 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 
 // import socket from "./socket"
 
-$( document ).ready(function(){
+$(document).ready(function(){
 	$(".button-collapse").sideNav();
 })
 
+import  "web/static/js/contact"

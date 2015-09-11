@@ -13,61 +13,61 @@
 		<link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
 		<link rel="shortcut icon" type="image/png" href="images/favicon.jpg">
 		<base target="_blank">
-		%body
-		%header.header
-			%nav.no-color
-				.nav-wrapper.z-depth-0
-					%a.button-collapse{data-activates: "mobile-demo", href: "#"}
-						%i.material-icons menu
-					%ul.hide-on-med-and-down
-						%li
-							%a{href: "#about", target: "_self"} about
-						%li
-							%a{href: "#projects", target: "_self"} projects
-						%li
-							%a{href: "https://github.com/praveenperera"} github
-						%li
-							%a{href: "mailto:contact@praveenperera.com", target: "_self"} contact
-					%ul#mobile-demo.side-nav.left
-						%li
-							%a{href: "#about", target: "_self"} about
-						%li
-							%a{href: "#projects", target: "_self"} projects
-						%li
-							%a{href: "https://github.com/praveenperera"} github
-						%li
-							%a{href: "mailto:contact@praveenperera.com", target: "_self"} contact
-			.splash.z-depth-1
-				.container
-					.row
-					.row.center-align.no-bottom-margin
-						.col.l12.s12
-							%img.circle.responsive-img{src: "images/praveenperera.jpg", alt: "praveen perera",  height: "200" width: "200"}
-						.col.l12.s12
-							%h5.white-text Praveen Perera
-							%h6.white-text Web Developer
-
-		%main
-			.container
-				%p.alert.alert-info{role: "alert"}
-					=get_flash(@conn, :info)
-				%p.alert.alert-danger{role: "alert"}
-					=get_flash(@conn, :error)
-				=@inner
-		%footer.page-footer.purple.darken-4
-			.container.purple.darken-4
-				%span.white-text  © Copyright 2015 Praveen Perera
-				%a.grey-text.text-lighten-4.right{href: "mailto:contact@praveenperera.com", target: "_self"}
-					&nbsp
-					%i.medium.fa.fa-envelope-o
-				%a.grey-text.text-lighten-4.right{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
-					&nbsp
-					%i.medium.fa.fa-linkedin
-				%a.grey-text.text-lighten-4.right{href: "http://github.com/praveenperera"}
-					&nbsp
-					%i.medium.fa.fa-github
-
-
-
 		<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+	%body
+	%header.header
+		%nav.no-color
+			.nav-wrapper.z-depth-0
+				%a.button-collapse{data-activates: "mobile-demo", href: "#"}
+					%i.material-icons menu
+				%ul.hide-on-med-and-down
+					%li
+						%a{href: "#about", target: "_self"} about
+					%li
+						%a{href: "#projects", target: "_self"} projects
+					%li
+						%a{href: "https://github.com/praveenperera"} github
+					%li
+						%a{href: "#contact", target: "_self"} contact
+				%ul#mobile-demo.side-nav.left
+					%li
+						%a{href: "#about", target: "_self"} about
+					%li
+						%a{href: "#projects", target: "_self"} projects
+					%li
+						%a{href: "https://github.com/praveenperera"} github
+					%li
+						%a{href: "#contact", target: "_self"} contact
+		.splash.z-depth-1
+			.container
+				.row
+				.row.center-align.no-bottom-margin
+					.col.l12.s12
+						%img.circle.responsive-img{src: "images/praveenperera.jpg", alt: "praveen perera",  height: "200" width: "200"}
+					.col.l12.s12
+						%h5.white-text Praveen Perera
+						%h6.white-text Web Developer
+
+	%main
+		.container
+			%p.alert.alert-info{role: "alert"}
+				=get_flash(@conn, :info)
+			%p.alert.alert-danger{role: "alert"}
+				=get_flash(@conn, :error)
+			=@inner
+	%footer.page-footer.purple.darken-4
+		.container.purple.darken-4
+			%span.white-text  © Copyright 2015 Praveen Perera
+			%a.grey-text.text-lighten-4.right{href: "mailto:contact@praveenperera.com", target: "_self"}
+				&nbsp
+				%i.medium.fa.fa-envelope-o
+			%a.grey-text.text-lighten-4.right{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
+				&nbsp
+				%i.medium.fa.fa-linkedin
+			%a.grey-text.text-lighten-4.right{href: "http://github.com/praveenperera"}
+				&nbsp
+				%i.medium.fa.fa-github
+
+
+
 
