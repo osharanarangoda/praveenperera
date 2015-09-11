@@ -118,11 +118,20 @@ footer.page-footer{
 	.container{
 		padding-bottom: 1.1rem;
 	}
+
+	.footer-icons{
+		padding-top: 0.3rem;
+	}
 }
 
 a.lightbox-gallery-image{
 	margin: 0;
 	padding: 0;
 	display: none;
+}
+.row.no-bottom-margin
+{
+	margin-bottom: 0px;
+	padding-bottom: 0;
 }
 
