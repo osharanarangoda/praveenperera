@@ -5,7 +5,6 @@ jQuery(function($)
         var email = $("#contact_form #email").val(); // get email field value
         var name = $("#contact_form #name").val(); // get name field value
         var msg = $("#contact_form #message").val(); // get message field value
-        var subject = $("#contact_form #subject").val(); // get message field value
 
         $.ajax(
         {
@@ -19,7 +18,7 @@ jQuery(function($)
                     'headers': {
                         'Reply-To': email
                     },
-                    'subject': subject + "---" + 'Website Contact Form Submission',
+                    'subject': 'Website Contact Form Submission' + ' ' + name + ' - ' + email,
                     'text': msg,
                     'to': [
                     {
@@ -34,7 +33,8 @@ jQuery(function($)
             alert('Your message has been sent. Thank you!'); // show success message
             $("#name").val(''); // reset field after successful submission
             $("#email").val(''); // reset field after successful submission
-            $("#msg").val(''); // reset field after successful submission
+            $("#message").val(''); // reset field after successful submission
+
         })
         .fail(function(response) {
             alert('Error sending message.');

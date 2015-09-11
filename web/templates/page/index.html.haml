@@ -133,19 +133,15 @@
 	%form.col.l8.m10.s12#contact_form{target: "_self"}
 		.row
 			.input-field.col.s12
-				%input#name{type: "text"}
+				%input#name{type: "text", required: true}
 				%label{for: "name"} Name
 		.row
 			.input-field.col.s12
-				%input#email{type: "text"}
+				%input#email{type: "text", required: true}
 				%label{for: "email"} Your Email Address
 		.row
 			.input-field.col.s12
-				%input#subject{type: "text"}
-				%label{for: "subject"} Subject
-		.row
-			.input-field.col.s12
-				%textarea.materialize-textarea#message{type: "textarea"}
+				%textarea.materialize-textarea#message{type: "textarea", required: true}
 				%label{for: "subject"} Message
 		.row
 			.input-field.col.s12
