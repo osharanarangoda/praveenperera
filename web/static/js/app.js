@@ -21,7 +21,10 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 // import socket from "./socket"
 
 $(document).ready(function(){
-	$(".button-collapse").sideNav();
+	$('.button-collapse').sideNav({
+	    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+	  }
+	);
 })
 
 import  "web/static/js/contact"
