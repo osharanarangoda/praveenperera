@@ -30,7 +30,7 @@ server {
 server {
     listen 80;
     server_name www.praveenperera.com;
-    return 301 $scheme://praveenperera.com$request_uri;
+    return 301 http://praveenperera.com$request_uri;
 }
 
 server {
