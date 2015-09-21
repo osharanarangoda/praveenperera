@@ -28,6 +28,13 @@ server {
 }
 
 server {
+    listen 80;
+    server_name www.praveenperera.com;
+
+    return 301 http://praveenperera.com$request_uri;
+}
+
+server {
   server_name .pereramail.com;
   rewrite ^ http://praveenperera.com$request_uri? permanent;
 }
