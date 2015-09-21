@@ -30,11 +30,17 @@ server {
 server {
     listen 80;
     server_name www.praveenperera.com;
-
     return 301 $scheme://praveenperera.com$request_uri;
 }
 
 server {
-  server_name .pereramail.com;
-  rewrite ^ $scheme://praveenperera.com$request_uri? permanent;
+  listen 80;
+  server_name www.pereramail.com;
+  return 301 $scheme://praveenperera.com$request_uri;
+}
+
+server {
+  listen 80;
+  server_name pereramail.com;
+  return 301 $scheme://praveenperera.com$request_uri;
 }
