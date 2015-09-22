@@ -37,6 +37,7 @@ defmodule Praveenperera.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},
      {:phoenix_haml, github: "chrismccord/phoenix_haml"}
+     [{:mix_test_watch, "~> 0.2", only: :dev}]
    ]
   end
 end
