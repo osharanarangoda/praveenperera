@@ -1,2 +1,0 @@
-web: mix phoenix.server
-
