@@ -4,7 +4,7 @@ defmodule Praveenperera.Mixfile do
   def project do
     [app: :praveenperera,
      version: "0.0.1",
-     elixir: "~> 1.1.0",
+     elixir: "~> 1.0.4",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
@@ -41,5 +41,3 @@ defmodule Praveenperera.Mixfile do
    ]
   end
 end
-
-
