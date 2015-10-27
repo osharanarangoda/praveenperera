@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :praveenperera, Praveenperera.Endpoint,
   http: [port: System.get_env("PORT")],
-  url: [host: "praveenperera.com", port: 80],
+  url: [host: "praveenperera.com", port: 80, compress: true],
   cache_static_manifest: "priv/static/manifest.json"
 
 # Do not print debug messages in production
