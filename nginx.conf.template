@@ -38,3 +38,9 @@ server {
   server_name .pereramail.com;
   return 301 http://praveenperera.com;
 }
+
+server {
+  listen 80;
+  server_name blog.praveenperera.com/validate-ecto-unique-associations-with-compound-indexes;
+  return 301 http://blog.praveenperera.com/using-compound-unique-indexes-to-validate-uniqueness-of-ecto-associations/;
+}
