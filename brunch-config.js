@@ -60,12 +60,13 @@ exports.config = {
   plugins: {
     babel: {
       // Do not use ES6 compiler in vendor code
-      ignore: [/web\/static\/vendor/]
+      ignore: [/web\/static\/vendor/],
+      pattern: /\.(es6|jsx?)$/
     },
-    pleeease: {
-      autoprefixer: true,
-      minifier: true,
-      sourcemaps: true,
+    postcss: {
+      processors: [
+        require('autoprefixer')(["> 1%", "last 8 versions", "Firefox ESR", "Opera 12.1"]),
+      ]
     }
   },
 
