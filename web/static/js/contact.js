@@ -22,7 +22,7 @@ jQuery(function($)
                     'text': msg,
                     'to': [
                     {
-                        'email': 'contact@praveenperera.com',
+                        'email': 'me@praveenperera.com',
                         'name': 'Praveen Perera',
                         'type': 'to'
                     }]
