@@ -51,11 +51,44 @@
 				Queen's University
 			%li.collection-item
 				%b Skills:&nbsp
-				Ruby, Ruby on Rails, Elixir, Phoenix, TDD/BDD, PostgreSQL, JS/jQuery, React.js, HTML/CSS, Sass, Brunch, Bootstrap, MaterializeCSS, Semantic UI
 .row
 	.col.s12
 		%a{name: "projects"}
 		%h4 Projects
+  .col.s12
+    .card
+      .card-image
+      -link to: "http://doctorsofsrilanka.com" do
+        %img{src: "images/screenshots/docs/banner.png" class: "responsive-img"}
+			.card-content.black-text
+				%span.card-title.black-text Doctors Of Sri Lanka
+				%p
+					Website with all of the doctors in Sri Lanka. From here you can find a doctor, get valuable feedback from their other patients and leave your own feedback as well.
+			.card-action.hide-on-medium-large-and-down
+        %a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "http://doctorsofsrilanka.com"}
+					%i.fa.fa-safari.left
+					Live
+				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/docs/home.png", target: "_self", data-lightbox: "docs", data-title: "This is the home page, from here you can search for doctors, sign in/sign up or view the latest reviews."}
+					%i.fa.fa-camera-retro.left
+					Preview
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/doctor.png", data-lightbox: "docs", data-title: "This is the doctor's page, here you can see the doctor's information, rating and reviews. You can also leave your own review."}
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/livesearch.png", data-lightbox: "docs", data-title: "This is the live search on the front page, it updates as you type."}
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/fullsearch.png", data-lightbox: "docs", data-title: "This is the full search page her you can search doctors by name and address, also updates as you type."}
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/login.png", data-lightbox: "docs", data-title: "This is the login page."}
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/register.png", data-lightbox: "docs", data-title: "This is the sign up page."}
+			.card-action.hide-on-medium-large-and-up
+        %a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "http://doctorsofsrilanka.com"}
+					%i.fa.fa-safari.left
+					Live
+				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/docs/home.png", target: "_self", data-lightbox: "docs mobile", data-title: "This is the home page, it has a list of available rides. You can also search for rides, post a ride, or a join a ride."}
+					%i.fa.fa-camera-retro.left
+					Preview
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/doctor.png", data-lightbox: "docs mobile", data-title: "This is the doctor's page, here you can see the doctor's information, rating and reviews. You can also leave your own review."}
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/livesearch.png", data-lightbox: "docs mobile", data-title: "This is the live search on the front page, it updates as you type."}
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/fullsearch.png", data-lightbox: "docs mobile", data-title: "This is the full search page her you can search doctors by name and address, also updates as you type."}
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/login.png", data-lightbox: "docs mobile", data-title: "This is the login page."}
+				%a.lightbox-gallery-image{href: "images/screenshots/docs/register.png", data-lightbox: "docs mobile", data-title: "This is the sign up page."}
+.row
 	.col.s12.l6
 		.card
 			.card-content.black-text
