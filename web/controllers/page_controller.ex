@@ -5,7 +5,4 @@ defmodule Praveenperera.PageController do
     render conn, "index.html"
   end
 
-  def jeff(conn, _params) do
-    render conn, "jeff.html"
-  end
 end
