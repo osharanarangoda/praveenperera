@@ -4,7 +4,7 @@ defmodule Praveenperera.Mixfile do
   def project do
     [app: :praveenperera,
      version: "0.0.1",
-     elixir: "~> 1.2.2",
+     elixir: "~> 1.2.3",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
@@ -18,7 +18,7 @@ defmodule Praveenperera.Mixfile do
   def application do
     [mod: {Praveenperera, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :timex]]
   end
 
   # Specifies which paths to compile per environment
@@ -37,6 +37,8 @@ defmodule Praveenperera.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},
      {:phoenix_haml, github: "chrismccord/phoenix_haml"},
+     {:mailgun, "~> 0.1.2"},
+     {:timex, "~> 2.1.4"},
      {:mix_test_watch, "~> 0.2", only: :dev}
    ]
   end

@@ -39,7 +39,7 @@
 				Praveen Perera
 			%li.collection-item
 				%b Age:&nbsp
-				23 years old
+				<%= Date.diff(Date.today, %Date{year: 1992, month: 3, day: 22}, :years) %> years old
 			%li.collection-item
 				%b Email:&nbsp
 				me@praveenperera.com
