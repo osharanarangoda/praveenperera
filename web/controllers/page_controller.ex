@@ -6,7 +6,7 @@ defmodule Praveenperera.PageController do
   end
 
   def submit_form(conn, params) do
-    Praveenperera.PraveenMailer.send_contact_email(params["message"]["from_name"], params["message"]["from_email"], params["message"]["text"])
+    Praveenperera.PraveenMailer.send_contact_email(params["message"]["name"], params["message"]["email"], params["message"]["text"])
     conn |> send_resp(201, "Success")
   end
 

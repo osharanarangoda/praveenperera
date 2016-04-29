@@ -12,19 +12,9 @@ jQuery(function($)
             url: "/api/send_email",
             data: {
                 'message': {
-                    'from_email': email,
-                    'from_name': name,
-                    'headers': {
-                        'Reply-To': email
-                    },
-                    'subject': 'Website Contact Form Submission' + ' -- Name:  ' + name + ' | Email: ' + email,
+                    'email': email,
+                    'name': name,
                     'text': msg,
-                    'to': [
-                    {
-                        'email': 'me@praveenperera.com',
-                        'name': 'Praveen Perera',
-                        'type': 'to'
-                    }]
                 }
             }
         })
