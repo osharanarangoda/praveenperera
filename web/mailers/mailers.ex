@@ -1,9 +1,7 @@
 defmodule Praveenperera.PraveenMailer do
 
-  @config domain: Application.get_env(:praveenperera, :mailgun_domain),
-          key: Application.get_env(:praveenperera, :mailgun_key)
-
-  use Mailgun.Client, @config
+  use Mailgun.Client, domain: Application.get_env(:praveenperera, :mailgun_domain),
+                      key:    Application.get_env(:praveenperera, :mailgun_key)
 
   @to "me@praveenperera.com"
 
