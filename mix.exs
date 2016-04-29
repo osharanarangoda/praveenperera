@@ -4,7 +4,7 @@ defmodule Praveenperera.Mixfile do
   def project do
     [app: :praveenperera,
      version: "0.0.1",
-     elixir: "~> 1.2.3",
+     elixir: "~> 1.2.4",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
@@ -39,6 +39,7 @@ defmodule Praveenperera.Mixfile do
      {:phoenix_haml, github: "chrismccord/phoenix_haml"},
      {:mailgun, "~> 0.1.2"},
      {:timex, "~> 2.1.4"},
+     {:corsica, "~> 0.4"},
      {:mix_test_watch, "~> 0.2", only: :dev}
    ]
   end
