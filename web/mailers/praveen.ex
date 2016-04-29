@@ -5,8 +5,8 @@ defmodule Praveenperera.PraveenMailer do
 
   @to "me@praveenperera.com"
 
-  def send_contact_email(name, email, message) do
-    send_email to: @to,
+  def send_contact_email(name, email, message, to \\ @to) do
+    send_email to: to,
                from: email,
                subject: "Website Contact Form Submission -- Name:  #{name} | Email: #{email}",
                html: "<p> #{message} </p>"

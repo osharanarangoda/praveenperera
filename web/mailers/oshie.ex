@@ -5,8 +5,8 @@ defmodule Praveenperera.OshieMailer do
 
   @to Application.get_env(:praveenperera, :o_email)
 
-  def send_contact_email(name, email, number) do
-    send_email to: @to,
+  def send_contact_email(name, email, number, to \\ @to) do
+    send_email to: to,
                from: email,
                subject: "New Lanka Novels Customer Submission",
                html: """
@@ -15,5 +15,4 @@ defmodule Praveenperera.OshieMailer do
                 <p><b>Phone Number:</b>#{number}</p>
                """
   end
-
 end
