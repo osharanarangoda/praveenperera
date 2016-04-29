@@ -39,3 +39,5 @@ config :praveenperera, Praveenperera.Repo,
   password: "postgres",
   database: "praveenperera_dev",
   pool_size: 10
+
+  import_config "dev.secret.exs"
