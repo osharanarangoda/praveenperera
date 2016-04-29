@@ -21,7 +21,7 @@ defmodule Praveenperera.Endpoint do
 
   plug Plug.RequestId
   plug Plug.Logger
-  plug Corsica, origins: ["https://praveenperera.com", "http://lankanovels.com"]
+  plug Corsica, origins: ~w(http://lankanovels.com http://www.lankanovels.com https://praveenperera.com)
 
   plug Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
