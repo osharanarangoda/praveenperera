@@ -9,9 +9,8 @@ jQuery(function($)
         $.ajax(
         {
             type: "POST",
-            url: "https://mandrillapp.com/api/1.0/messages/send.json",
+            url: "/api/send_email",
             data: {
-                'key': 'BpICHsow9MF7s-Zc-cvgIQ',
                 'message': {
                     'from_email': email,
                     'from_name': name,

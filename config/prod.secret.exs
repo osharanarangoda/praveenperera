@@ -11,3 +11,7 @@ config :praveenperera, Praveenperera.Repo,
 	adapter: Ecto.Adapters.Postgres,
 	url: System.get_env("DATABASE_URL"),
 	pool_size: 20
+
+# Configure mailgun
+config :praveenperera, mailgun_domain: System.get_env("MAILGUN_DOMAIN"),
+                       mailgun_key: System.get_env("MAILGUN_KEY")

@@ -19,6 +19,12 @@ defmodule Praveenperera.Router do
     get "/", PageController, :index
   end
 
+  scope "/api", Praveenperera do
+    pipe_through :api
+
+    post "send_email", PageController, :submit_form
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", Praveenperera do
   #   pipe_through :api
