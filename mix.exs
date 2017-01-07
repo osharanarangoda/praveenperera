@@ -4,12 +4,12 @@ defmodule Praveenperera.Mixfile do
   def project do
     [app: :praveenperera,
      version: "0.0.1",
-     elixir: "~> 1.2.4",
+     elixir: "~> 1.4",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -18,7 +18,7 @@ defmodule Praveenperera.Mixfile do
   def application do
     [mod: {Praveenperera, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
-                    :phoenix_ecto, :postgrex, :timex]]
+                    :timex]]
   end
 
   # Specifies which paths to compile per environment
@@ -30,17 +30,18 @@ defmodule Praveenperera.Mixfile do
   # Type `mix help deps` for examples and options
   defp deps do
     [
-     {:phoenix, "~> 1.0.2"},
-     {:phoenix_ecto, "~> 1.2"},
-     {:postgrex, ">= 0.0.0"},
-     {:phoenix_html, "~> 2.2"},
-     {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:cowboy, "~> 1.0"},
-     {:phoenix_haml, github: "chrismccord/phoenix_haml"},
-     {:mailgun, "~> 0.1.2"},
-     {:timex, "~> 2.1.4"},
-     {:corsica, "~> 0.4"},
-     {:mix_test_watch, "~> 0.2", only: :dev}
-   ]
+      {:phoenix, "~> 1.2"},
+      {:phoenix_pubsub, "~> 1.0"},
+      {:phoenix_ecto, "~> 3.0"},
+      {:poison, "~> 2.0", override: true},
+      {:phoenix_html, "~> 2.6", override: true },
+      {:phoenix_live_reload, "~> 1.0", only: :dev},
+      {:cowboy, "~> 1.0"},
+      {:phoenix_haml, github: "chrismccord/phoenix_haml"},
+      {:mailgun, "~> 0.1"},
+      {:timex, "~> 3.0"},
+      {:corsica, "~> 0.4"},
+      {:mix_test_watch, "~> 0.2", only: :dev}
+    ]
   end
 end

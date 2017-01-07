@@ -10,7 +10,7 @@ defmodule Praveenperera do
       # Start the endpoint when the application starts
       supervisor(Praveenperera.Endpoint, []),
       # Start the Ecto repository
-      worker(Praveenperera.Repo, []),
+      # worker(Praveenperera.Repo, []),
       # Here you could define other workers and supervisors as children
       # worker(Praveenperera.Worker, [arg1, arg2, arg3]),
     ]

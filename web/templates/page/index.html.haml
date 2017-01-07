@@ -1,187 +1,187 @@
 .row
 .row
-	.col.l7.s12
-		%h4 About
-		%a{name: "about"}
-		%p My name is Praveen Perera and I am a full stack developer residing in Oakville ON, Canada. I started developing simple websites with HTML/CSS and JavaScript 5 years ago. Since then I have greatly upgraded my skill sets. I now have 3+ years of development experience with Ruby and Ruby on Rails in the backend and Javascript in the frontend.
+  .col.l7.s12
+    %h4 About
+    %a{name: "about"}
+    %p My name is Praveen Perera and I am a full stack developer residing in Oakville ON, Canada. I started developing simple websites with HTML/CSS and JavaScript 5 years ago. Since then I have greatly upgraded my skill sets. I now have 3+ years of development experience with Ruby and Ruby on Rails in the backend and Javascript in the frontend.
 
-		Recently I have been exploring functional programming with <a href="http://elixir-lang.org">Elixir</a> and the <a href="http://www.phoenixframework.org">Phoenix Framework</a>. In fact this website is my first Elixir/Phoenix project. The <a href="https://github.com/praveenperera/praveenperera">code for this website</a> can be found on my Github along with some of my other projects.
+    Recently I have been exploring functional programming with <a href="http://elixir-lang.org">Elixir</a> and the <a href="http://www.phoenixframework.org">Phoenix Framework</a>. In fact this website is my first Elixir/Phoenix project. The <a href="https://github.com/praveenperera/praveenperera">code for this website</a> can be found on my Github along with some of my other projects.
 
-		%p I am currently also taking on new clients, if you or your company is in need of a full stack developer, I can be contacted using <a href="#contact" target="_self">the form below</a> or <a href="mailto:me@praveenperera.com" target="_self">by email</a>.
+    %p I am currently also taking on new clients, if you or your company is in need of a full stack developer, I can be contacted using <a href="#contact" target="_self">the form below</a> or <a href="mailto:me@praveenperera.com" target="_self">by email</a>.
 
-		%p
-		.social-buttons.hide-on-small-only
-			%a.waves-effect.waves-light.btn.purple.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
-				%i.fa.fa-github.left
-				Github
-			%a.waves-effect.waves-light.btn.purple.darken-4{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
-				%i.fa.fa-linkedin-square.left
-				LinkedIn
-			%a.waves-effect.waves-light.btn.purple.darken-4{href: "mailto:me@praveenperera.com", target: "_self"}
-				%i.fa.fa-envelope-o.left
-				Email
-		.social-buttons.hide-on-med-and-up
-			%a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
-				%i.fa.fa-github.left
-				Github
-			%a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
-				%i.fa.fa-linkedin-square.left
-				LinkedIn
-			%a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "mailto:me@praveenperera.com", target: "_self"}
-				%i.fa.fa-envelope-square.left
-				Email
-		%br
-	.col.l4.s12
-		%h5.orange-text Information
-		%ul.collection.z-depth-1
-			%li.collection-item
-				%b Name:&nbsp;
-				Praveen Perera
-			%li.collection-item
-				%b Age:&nbsp
-				<%= Date.diff(Date.today, %Date{year: 1992, month: 3, day: 22}, :years) %> years old
-			%li.collection-item
-				%b Email:&nbsp
-				me@praveenperera.com
-			%li.collection-item
-				%b Location:&nbsp
-				Oakville, Canada
-			%li.collection-item
-				%b Alma Mater:&nbsp
-				Queen's University
-			%li.collection-item
-				%b Skills:&nbsp
-				Ruby, Ruby on Rails, Elixir, Phoenix, TDD/BDD, PostgreSQL, JS/jQuery, React/ReactNative, HTML/CSS, Sass, Brunch, Webpack, Bootstrap, MaterializeCSS, Semantic UI
+    %p
+    .social-buttons.hide-on-small-only
+      %a.waves-effect.waves-light.btn.purple.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
+        %i.fa.fa-github.left
+        Github
+      %a.waves-effect.waves-light.btn.purple.darken-4{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
+        %i.fa.fa-linkedin-square.left
+        LinkedIn
+      %a.waves-effect.waves-light.btn.purple.darken-4{href: "mailto:me@praveenperera.com", target: "_self"}
+        %i.fa.fa-envelope-o.left
+        Email
+    .social-buttons.hide-on-med-and-up
+      %a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
+        %i.fa.fa-github.left
+        Github
+      %a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
+        %i.fa.fa-linkedin-square.left
+        LinkedIn
+      %a.waves-effect.waves-light.btn.btn-block-margin.purple.darken-4{href: "mailto:me@praveenperera.com", target: "_self"}
+        %i.fa.fa-envelope-square.left
+        Email
+    %br
+  .col.l4.s12
+    %h5.orange-text Information
+    %ul.collection.z-depth-1
+      %li.collection-item
+        %b Name:&nbsp;
+        Praveen Perera
+      %li.collection-item
+        %b Age:&nbsp
+        <%= Timex.diff(Date.utc_today(), %Date{year: 1992, month: 3, day: 22}, :years) %> years old
+      %li.collection-item
+        %b Email:&nbsp
+        me@praveenperera.com
+      %li.collection-item
+        %b Location:&nbsp
+        Oakville, Canada
+      %li.collection-item
+        %b Alma Mater:&nbsp
+        Queen's University
+      %li.collection-item
+        %b Skills:&nbsp
+        Ruby, Ruby on Rails, Elixir, Phoenix, TDD/BDD, PostgreSQL, JS/jQuery, React/ReactNative, HTML/CSS, Sass, Brunch, Webpack, Bootstrap, MaterializeCSS, Semantic UI
 .row
-	.col.s12
-		%a{name: "projects"}
-		%h4 Projects
+  .col.s12
+    %a{name: "projects"}
+    %h4 Projects
   .col.s12
     .card
       .card-image
       -link to: "http://doctorsofsrilanka.com" do
         %img{src: "images/screenshots/docs/banner.png" class: "responsive-img"}
-			.card-content.black-text
-				%span.card-title.black-text Doctors Of Sri Lanka
-				%p
-					This website contains all of the doctors in Sri Lanka. From here you can search and find a doctor, get valuable feedback from their patients and leave your own feedback. Built using Elixir and the Phoenix framework. ReactJS was used for the live search bar on the homepage and <a href="http://materializecss.com"> MaterializeCSS </a> was used in the frontend. Deployed using <a href="https://blog.praveenperera.com/deploying-phoenix-applications-using-dokku/">Dokku.</a>
-			.card-action.hide-on-medium-large-and-down
+      .card-content.black-text
+        %span.card-title.black-text Doctors Of Sri Lanka
+        %p
+          This website contains all of the doctors in Sri Lanka. From here you can search and find a doctor, get valuable feedback from their patients and leave your own feedback. Built using Elixir and the Phoenix framework. ReactJS was used for the live search bar on the homepage and <a href="http://materializecss.com"> MaterializeCSS </a> was used in the frontend. Deployed using <a href="https://blog.praveenperera.com/deploying-phoenix-applications-using-dokku/">Dokku.</a>
+      .card-action.hide-on-medium-large-and-down
         %a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "http://doctorsofsrilanka.com"}
-					%i.fa.fa-safari.left
-					Live
-				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/docs/home.png", target: "_self", data-lightbox: "docs", data-title: "This is the home page, from here you can search for doctors, sign in/sign up or view the latest reviews."}
-					%i.fa.fa-camera-retro.left
-					Preview
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/doctor.png", data-lightbox: "docs", data-title: "This is the doctor's page, here you can see the doctor's information, rating and reviews. You can also leave your own review."}
+          %i.fa.fa-safari.left
+          Live
+        %a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/docs/home.png", target: "_self", data-lightbox: "docs", data-title: "This is the home page, from here you can search for doctors, sign in/sign up or view the latest reviews."}
+          %i.fa.fa-camera-retro.left
+          Preview
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/doctor.png", data-lightbox: "docs", data-title: "This is the doctor's page, here you can see the doctor's information, rating and reviews. You can also leave your own review."}
         %a.lightbox-gallery-image{href: "images/screenshots/docs/livesearch.png", data-lightbox: "docs", data-title: "This is the live search on the front page, it updates as you type."}
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/fullsearch.png", data-lightbox: "docs", data-title: "This is the full search page her you can search doctors by name and address, also updates as you type."}
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/login.png", data-lightbox: "docs", data-title: "This is the login page."}
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/register.png", data-lightbox: "docs", data-title: "This is the sign up page."}
-			.card-action.hide-on-medium-large-and-up
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/fullsearch.png", data-lightbox: "docs", data-title: "This is the full search page her you can search doctors by name and address, also updates as you type."}
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/login.png", data-lightbox: "docs", data-title: "This is the login page."}
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/register.png", data-lightbox: "docs", data-title: "This is the sign up page."}
+      .card-action.hide-on-medium-large-and-up
         %a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "http://doctorsofsrilanka.com"}
-					%i.fa.fa-safari.left
-					Live
-				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/docs/home.png", target: "_self", data-lightbox: "docs mobile", data-title: "This is the home page, from here you can search for doctors, sign in/sign up or view the latest reviews."}
-					%i.fa.fa-camera-retro.left
-					Preview
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/doctor.png", data-lightbox: "docs mobile", data-title: "This is the doctor's page, here you can see the doctor's information, rating and reviews. You can also leave your own review."}
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/livesearch.png", data-lightbox: "docs mobile", data-title: "This is the live search on the front page, it updates as you type."}
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/fullsearch.png", data-lightbox: "docs mobile", data-title: "This is the full search page her you can search doctors by name and address, also updates as you type."}
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/login.png", data-lightbox: "docs mobile", data-title: "This is the login page."}
-				%a.lightbox-gallery-image{href: "images/screenshots/docs/register.png", data-lightbox: "docs mobile", data-title: "This is the sign up page."}
+          %i.fa.fa-safari.left
+          Live
+        %a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/docs/home.png", target: "_self", data-lightbox: "docs mobile", data-title: "This is the home page, from here you can search for doctors, sign in/sign up or view the latest reviews."}
+          %i.fa.fa-camera-retro.left
+          Preview
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/doctor.png", data-lightbox: "docs mobile", data-title: "This is the doctor's page, here you can see the doctor's information, rating and reviews. You can also leave your own review."}
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/livesearch.png", data-lightbox: "docs mobile", data-title: "This is the live search on the front page, it updates as you type."}
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/fullsearch.png", data-lightbox: "docs mobile", data-title: "This is the full search page her you can search doctors by name and address, also updates as you type."}
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/login.png", data-lightbox: "docs mobile", data-title: "This is the login page."}
+        %a.lightbox-gallery-image{href: "images/screenshots/docs/register.png", data-lightbox: "docs mobile", data-title: "This is the sign up page."}
 .row.two-projects-row
-	.col.s12.m12.l6
-		.card
-			.card-content.black-text
-				%span.card-title.black-text Queen's Rideshare
-				%p
-					Platform for Queen's University students to share rides between home and Kingston, or anywhere in between. Built with Ruby on Rails and Bootstrap 3 on the frontend. Compelete with email like messaging system to communicate with other users.
-			.card-action.hide-on-medium-large-and-down
-				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/qride/home.png", target: "_self", data-lightbox: "qride", data-title: "This is the home page, it has a list of available rides. You can also search for rides, post a ride, or a join a ride."}
-					%i.fa.fa-camera-retro.left
-					Preview
-				%a.lightbox-gallery-image{href: "images/screenshots/qride/post_ride.png", data-lightbox: "qride", data-title: "From this page you can post a ride and add a description."}
-				%a.lightbox-gallery-image{href: "images/screenshots/qride/convos.png", data-lightbox: "qride", data-title: "There is a fully functional conversations page so you can contact other users."}
-				%a.lightbox-gallery-image{href: "images/screenshots/qride/signup.png", data-lightbox: "qride", data-title: "Sign up page"}
-				%a.lightbox-gallery-image{href: "images/screenshots/qride/login.png", data-lightbox: "qride", data-title: "Login page"}
-				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "http://qrideshare.praveenperera.com"}
-					%i.fa.fa-safari.left
-					Demo
-				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "https://github.com/praveenperera/qrideshare"}
-					%i.fa.fa-file-code-o.left
-					Code
-			.card-action.hide-on-medium-large-and-up
-				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/qride/home.png", target: "_self", data-lightbox: "qride mobile", data-title: "This is the home page, it has a list of available rides. You can also search for rides, post a ride, or a join a ride."}
-					%i.fa.fa-camera-retro.left
-					Preview
-				%a.lightbox-gallery-image{href: "images/screenshots/qride/post_ride.png", data-lightbox: "qride mobile", data-title: "From this page you can post a ride and add a description"}
-				%a.lightbox-gallery-image{href: "images/screenshots/qride/convos.png", data-lightbox: "qride mobile", data-title: "There is a fully functional conversations page so you can contact other users"}
-				%a.lightbox-gallery-image{href: "images/screenshots/qride/signup.png", data-lightbox: "qride mobile", data-title: "Sign up page"}
-				%a.lightbox-gallery-image{href: "images/screenshots/qride/login.png", data-lightbox: "qride mobile", data-title: "Login page"}
-				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "http://qrideshare.praveenperera.com"}
-					%i.fa.fa-safari.left
-					Demo
-				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "https://github.com/praveenperera/qrideshare"}
-					%i.fa.fa-file-code-o.left
-					Code
-	.col.s12.m12.l6
-		.card
-			.card-content.black-text
-				%span.card-title.black-text Video Learning
-				%p
-					Platform to launch free and paid video courses. Built with Ruby on Rails and MaterializeCSS on the frontend. Complete with stripe payments, 3rd party authentication system and simple CMS to manage video courses.
-			.card-action.hide-on-medium-large-and-down
-				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/vl/project.png", target: "_self", data-lightbox: "video learning", data-title: "The course page, includes description, reviews and overall rating of the course. Also includes the price with a link to join the project. Stripe is used for payments"}
-					%i.fa.fa-camera-retro.left
-					Preview
-				%a.lightbox-gallery-image{href: "images/screenshots/vl/task.png", data-lightbox: "video learning", data-title: "Course page, contains all the videos and text tutorials"}
-				%a.lightbox-gallery-image{href: "images/screenshots/vl/courses.png", data-lightbox: "video learning", data-title: "Contains the full course catalog"}
-				%a.lightbox-gallery-image{href: "images/screenshots/vl/discussions.png", data-lightbox: "video learning", data-title: "Discussions page using disqus"}
-				%a.lightbox-gallery-image{href: "images/screenshots/vl/signup.png", data-lightbox: "video learning", data-title: "Sign up page, sign up using email, facebook, google or github"}
-				%a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "https://github.com/praveenperera/videolearning"}
-					%i.fa.fa-file-code-o.left
-					Code
+  .col.s12.m12.l6
+    .card
+      .card-content.black-text
+        %span.card-title.black-text Queen's Rideshare
+        %p
+          Platform for Queen's University students to share rides between home and Kingston, or anywhere in between. Built with Ruby on Rails and Bootstrap 3 on the frontend. Compelete with email like messaging system to communicate with other users.
+      .card-action.hide-on-medium-large-and-down
+        %a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/qride/home.png", target: "_self", data-lightbox: "qride", data-title: "This is the home page, it has a list of available rides. You can also search for rides, post a ride, or a join a ride."}
+          %i.fa.fa-camera-retro.left
+          Preview
+        %a.lightbox-gallery-image{href: "images/screenshots/qride/post_ride.png", data-lightbox: "qride", data-title: "From this page you can post a ride and add a description."}
+        %a.lightbox-gallery-image{href: "images/screenshots/qride/convos.png", data-lightbox: "qride", data-title: "There is a fully functional conversations page so you can contact other users."}
+        %a.lightbox-gallery-image{href: "images/screenshots/qride/signup.png", data-lightbox: "qride", data-title: "Sign up page"}
+        %a.lightbox-gallery-image{href: "images/screenshots/qride/login.png", data-lightbox: "qride", data-title: "Login page"}
+        %a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "http://qrideshare.praveenperera.com"}
+          %i.fa.fa-safari.left
+          Demo
+        %a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "https://github.com/praveenperera/qrideshare"}
+          %i.fa.fa-file-code-o.left
+          Code
+      .card-action.hide-on-medium-large-and-up
+        %a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/qride/home.png", target: "_self", data-lightbox: "qride mobile", data-title: "This is the home page, it has a list of available rides. You can also search for rides, post a ride, or a join a ride."}
+          %i.fa.fa-camera-retro.left
+          Preview
+        %a.lightbox-gallery-image{href: "images/screenshots/qride/post_ride.png", data-lightbox: "qride mobile", data-title: "From this page you can post a ride and add a description"}
+        %a.lightbox-gallery-image{href: "images/screenshots/qride/convos.png", data-lightbox: "qride mobile", data-title: "There is a fully functional conversations page so you can contact other users"}
+        %a.lightbox-gallery-image{href: "images/screenshots/qride/signup.png", data-lightbox: "qride mobile", data-title: "Sign up page"}
+        %a.lightbox-gallery-image{href: "images/screenshots/qride/login.png", data-lightbox: "qride mobile", data-title: "Login page"}
+        %a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "http://qrideshare.praveenperera.com"}
+          %i.fa.fa-safari.left
+          Demo
+        %a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "https://github.com/praveenperera/qrideshare"}
+          %i.fa.fa-file-code-o.left
+          Code
+  .col.s12.m12.l6
+    .card
+      .card-content.black-text
+        %span.card-title.black-text Video Learning
+        %p
+          Platform to launch free and paid video courses. Built with Ruby on Rails and MaterializeCSS on the frontend. Complete with stripe payments, 3rd party authentication system and simple CMS to manage video courses.
+      .card-action.hide-on-medium-large-and-down
+        %a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "images/screenshots/vl/project.png", target: "_self", data-lightbox: "video learning", data-title: "The course page, includes description, reviews and overall rating of the course. Also includes the price with a link to join the project. Stripe is used for payments"}
+          %i.fa.fa-camera-retro.left
+          Preview
+        %a.lightbox-gallery-image{href: "images/screenshots/vl/task.png", data-lightbox: "video learning", data-title: "Course page, contains all the videos and text tutorials"}
+        %a.lightbox-gallery-image{href: "images/screenshots/vl/courses.png", data-lightbox: "video learning", data-title: "Contains the full course catalog"}
+        %a.lightbox-gallery-image{href: "images/screenshots/vl/discussions.png", data-lightbox: "video learning", data-title: "Discussions page using disqus"}
+        %a.lightbox-gallery-image{href: "images/screenshots/vl/signup.png", data-lightbox: "video learning", data-title: "Sign up page, sign up using email, facebook, google or github"}
+        %a.waves-effect.waves-light.btn.white-text.purple.darken-4{href: "https://github.com/praveenperera/videolearning"}
+          %i.fa.fa-file-code-o.left
+          Code
 
-			.card-action.hide-on-medium-large-and-up
-				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/vl/project.png", target: "_self", data-lightbox: "video learning mobile", data-title: "The course page, includes description, reviews and overall rating of the course. Also includes the price with a link to join the project. Stripe is used for payments"}
-					%i.fa.fa-camera-retro.left
-					Preview
-				%a.lightbox-gallery-image{href: "images/screenshots/vl/task.png", data-lightbox: "video learning mobile", data-title: "Course page, contains all the videos and text tutorials"}
-				%a.lightbox-gallery-image{href: "images/screenshots/vl/courses.png", data-lightbox: "video learning mobile", data-title: "Contains the full course catalog"}
-				%a.lightbox-gallery-image{href: "images/screenshots/vl/discussions.png", data-lightbox: "video learning mobile", data-title: "Discussions page using disqus"}
-				%a.lightbox-gallery-image{href: "images/screenshots/vl/signup.png", data-lightbox: "video learning mobile", data-title: "Sign up page, sign up using email, facebook, google or github"}
-				%a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "https://github.com/praveenperera/videolearning"}
-					%i.fa.fa-file-code-o.left
-					Code
+      .card-action.hide-on-medium-large-and-up
+        %a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "images/screenshots/vl/project.png", target: "_self", data-lightbox: "video learning mobile", data-title: "The course page, includes description, reviews and overall rating of the course. Also includes the price with a link to join the project. Stripe is used for payments"}
+          %i.fa.fa-camera-retro.left
+          Preview
+        %a.lightbox-gallery-image{href: "images/screenshots/vl/task.png", data-lightbox: "video learning mobile", data-title: "Course page, contains all the videos and text tutorials"}
+        %a.lightbox-gallery-image{href: "images/screenshots/vl/courses.png", data-lightbox: "video learning mobile", data-title: "Contains the full course catalog"}
+        %a.lightbox-gallery-image{href: "images/screenshots/vl/discussions.png", data-lightbox: "video learning mobile", data-title: "Discussions page using disqus"}
+        %a.lightbox-gallery-image{href: "images/screenshots/vl/signup.png", data-lightbox: "video learning mobile", data-title: "Sign up page, sign up using email, facebook, google or github"}
+        %a.waves-effect.waves-light.btn.btn-block-margin.white-text.purple.darken-4{href: "https://github.com/praveenperera/videolearning"}
+          %i.fa.fa-file-code-o.left
+          Code
 .row.center
-	.col.s12
-		%a.waves-effect.waves-light.btn.btn-large.white-text.orange.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
-			%i.fa.fa-github.left
-			View All Repositories
+  .col.s12
+    %a.waves-effect.waves-light.btn.btn-large.white-text.orange.darken-4{href: "https://github.com/praveenperera?tab=repositories"}
+      %i.fa.fa-github.left
+      View All Repositories
 
 .row
 .row
-	.col.l12.s12
-		%a{name: "contact"}
-		%h4 Contact
-	.col.l8.m10.s12
-		%p Have any questions? Need some website work or application development done? Just want to say hi? Use the contact form below or <a href="mailto:me@praveenperera.com" target="_self">send me an email</a> to get in touch and I will reply as soon as possible. I look forward to hearing from you!
-	%form.col.l8.m10.s12#contact_form{target: "_self"}
-		.row
-			.input-field.col.s12
-				%input#name{type: "text", required: true}
-				%label{for: "name"} Name
-		.row
-			.input-field.col.s12
-				%input#email{type: "text", required: true}
-				%label{for: "email"} Your Email Address
-		.row
-			.input-field.col.s12
-				%textarea.materialize-textarea#message{type: "textarea", required: true}
-				%label{for: "subject"} Message
-		.row
-			.input-field.col.s12
-				%label.col-md-4.control-label{for: "submit"}
-				%button#submit.btn.orange.darken-4{name: "submit"}
-					Send Message
-					%i.fa.fa-paper-plane.right
+  .col.l12.s12
+    %a{name: "contact"}
+    %h4 Contact
+  .col.l8.m10.s12
+    %p Have any questions? Need some website work or application development done? Just want to say hi? Use the contact form below or <a href="mailto:me@praveenperera.com" target="_self">send me an email</a> to get in touch and I will reply as soon as possible. I look forward to hearing from you!
+  %form.col.l8.m10.s12#contact_form{target: "_self"}
+    .row
+      .input-field.col.s12
+        %input#name{type: "text", required: true}
+        %label{for: "name"} Name
+    .row
+      .input-field.col.s12
+        %input#email{type: "text", required: true}
+        %label{for: "email"} Your Email Address
+    .row
+      .input-field.col.s12
+        %textarea.materialize-textarea#message{type: "textarea", required: true}
+        %label{for: "subject"} Message
+    .row
+      .input-field.col.s12
+        %label.col-md-4.control-label{for: "submit"}
+        %button#submit.btn.orange.darken-4{name: "submit"}
+          Send Message
+          %i.fa.fa-paper-plane.right

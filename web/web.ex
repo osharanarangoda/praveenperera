@@ -18,27 +18,28 @@ defmodule Praveenperera.Web do
 
   def model do
     quote do
-      use Ecto.Model
+      use Ecto.Schema
+      import Ecto
+      import Ecto.Changeset
+      import Ecto.Query
     end
   end
 
   def controller do
     quote do
       use Phoenix.Controller
-
       alias Praveenperera.Repo
-      import Ecto.Model
-      import Ecto.Query, only: [from: 1, from: 2]
+      import Ecto
+      import Ecto.Query
 
       import Praveenperera.Router.Helpers
+      import Praveenperera.Gettext
     end
   end
 
   def view do
     quote do
       use Phoenix.View, root: "web/templates"
-      use Timex
-
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_csrf_token: 0, get_flash: 2, view_module: 1]
 
@@ -46,6 +47,7 @@ defmodule Praveenperera.Web do
       use Phoenix.HTML
 
       import Praveenperera.Router.Helpers
+      import Praveenperera.Gettext
     end
   end
 
@@ -60,9 +62,9 @@ defmodule Praveenperera.Web do
       use Phoenix.Channel
 
       alias Praveenperera.Repo
-      import Ecto.Model
-      import Ecto.Query, only: [from: 1, from: 2]
-
+      import Ecto
+      import Ecto.Query
+      import Praveenperera.Gettext
     end
   end
 

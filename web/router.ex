@@ -22,7 +22,7 @@ defmodule Praveenperera.Router do
   scope "/api", Praveenperera do
     pipe_through :api
 
-    post "send_email", PageController, :send_email
+    post "/send_email", PageController, :send_email
   end
 
   # Other scopes may use custom stacks.

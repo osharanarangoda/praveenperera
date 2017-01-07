@@ -1,85 +1,85 @@
 !!!
 %html{lang: "en"}
-	%head
-		%meta{charset: "utf-8"}
-		%meta{content: "IE=edge", "http-equiv" "X-UA-Compatible"}
-		%meta{content: "My name is Praveen Perera, I am a full stack ruby / ruby on rails developer from Oakvile ON, welcome to my website. Take a look around, check out some of my projects and feel free to contact me!", name: "description"}
-		%meta{content: "Praveen Perera", name: "author"}
-		<meta name="google-site-verification" content="qBfmb4MH_70jWjpNRrRgfyUKFQJKYweELOD5ZjE_ghU" />
-		<meta name=viewport content="width=device-width, initial-scale=1">
-		%title Praveen Perera | Full Stack Developer | Home Page
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-		<link rel="shortcut icon" type="image/png" href="images/favicon.jpg">
-		<base target="_blank">
-		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-67904702-1', 'auto');ga('send', 'pageview');</script>
-	%body
-		%header.header
-			%nav.no-color
-				.nav-wrapper.z-depth-0
-					%a.button-collapse{data-activates: "mobile-demo", href: "#"}
-						%i.fa.fa-bars
-					%ul.hide-on-med-and-down
-						%li
-							%a{href: "#about", target: "_self"} about
-						%li
-							%a{href: "#projects", target: "_self"} projects
-						%li
-							%a{href: "http://blog.praveenperera.com"} blog
-						%li
-							%a{href: "#contact", target: "_self"} contact
-					%ul#mobile-demo.side-nav.left
-						%li
-							%a{href: "#about", target: "_self"} about
-						%li
-							%a{href: "#projects", target: "_self"} projects
-						%li
-							%a{href: "http://blog.praveenperera.com"} blog
-						%li
-							%a{href: "#contact", target: "_self"} contact
-			.splash.z-depth-1
-				.container
-					.row
-					.row.center-align.no-bottom-margin
-						.col.l12.s12
-							%img.circle.responsive-img{src: "images/praveenperera.jpg", alt: "praveen perera",  height: "200" width: "200"}
-						.col.l12.s12
-							%h5.white-text Praveen Perera
-							%h6.white-text Software Developer
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge", "http-equiv" "X-UA-Compatible"}
+    %meta{content: "My name is Praveen Perera, I am a full stack ruby / ruby on rails developer from Oakvile ON, welcome to my website. Take a look around, check out some of my projects and feel free to contact me!", name: "description"}
+    %meta{content: "Praveen Perera", name: "author"}
+    <meta name="google-site-verification" content="qBfmb4MH_70jWjpNRrRgfyUKFQJKYweELOD5ZjE_ghU" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    %title Praveen Perera | Full Stack Developer | Home Page
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.jpg">
+    <base target="_blank">
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-67904702-1', 'auto');ga('send', 'pageview');</script>
+  %body
+    %header.header
+      %nav.no-color
+        .nav-wrapper.z-depth-0
+          %a.button-collapse{data-activates: "mobile-demo", href: "#"}
+            %i.fa.fa-bars
+          %ul.hide-on-med-and-down
+            %li
+              %a{href: "#about", target: "_self"} about
+            %li
+              %a{href: "#projects", target: "_self"} projects
+            %li
+              %a{href: "http://blog.praveenperera.com"} blog
+            %li
+              %a{href: "#contact", target: "_self"} contact
+          %ul#mobile-demo.side-nav.left
+            %li
+              %a{href: "#about", target: "_self"} about
+            %li
+              %a{href: "#projects", target: "_self"} projects
+            %li
+              %a{href: "http://blog.praveenperera.com"} blog
+            %li
+              %a{href: "#contact", target: "_self"} contact
+      .splash.z-depth-1
+        .container
+          .row
+          .row.center-align.no-bottom-margin
+            .col.l12.s12
+              %img.circle.responsive-img{src: "images/praveenperera.jpg", alt: "praveen perera",  height: "200" width: "200"}
+            .col.l12.s12
+              %h5.white-text Praveen Perera
+              %h6.white-text Software Developer
 
-		%main
-			.container
-				%p.alert.alert-info{role: "alert"}
-					=get_flash(@conn, :info)
-				%p.alert.alert-danger{role: "alert"}
-					=get_flash(@conn, :error)
-				=@inner
-		%footer.page-footer.purple.darken-4
-			.container.purple.darken-4
-				.row.no-bottom-margin.hide-on-small-only
-					.col.s12.l6.m8
-						%span.white-text © Copyright Praveen Perera, 2016. All rights reserved.
-					.col.s12.l6.m4
-						%a.grey-text.text-lighten-4.right{href: "mailto:me@praveenperera.com", target: "_self"}
-							&nbsp
-							%i.medium.fa.fa-envelope-o
-						%a.grey-text.text-lighten-4.right{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
-							&nbsp
-							%i.medium.fa.fa-linkedin
-						%a.grey-text.text-lighten-4.right{href: "http://github.com/praveenperera"}
-							&nbsp
-							%i.medium.fa.fa-github
-				.row.center.no-bottom-margin.hide-on-med-and-up
-					.col.s12.l6.m6
-						%span.white-text © Copyright Praveen Perera, <%= Date.today.year %>. All rights reserved.
-					.col.s12.l6.m6.footer-icons
-						%a.grey-text.text-lighten-4.center{href: "http://github.com/praveenperera"}
-							&nbsp
-							%i.medium.fa.fa-github
-						%a.grey-text.text-lighten-4.center{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
-							&nbsp
-							%i.medium.fa.fa-linkedin
-						%a.grey-text.text-lighten-4.center{href: "mailto:me@praveenperera.com", target: "_self"}
-							&nbsp
-							%i.medium.fa.fa-envelope-o
-		<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    %main
+      .container
+        %p.alert.alert-info{role: "alert"}
+          =get_flash(@conn, :info)
+        %p.alert.alert-danger{role: "alert"}
+          =get_flash(@conn, :error)
+        = render @view_module, @view_template, assigns
+    %footer.page-footer.purple.darken-4
+      .container.purple.darken-4
+        .row.no-bottom-margin.hide-on-small-only
+          .col.s12.l6.m8
+            %span.white-text © Copyright Praveen Perera, <%= Date.utc_today().year %>. All rights reserved.
+          .col.s12.l6.m4
+            %a.grey-text.text-lighten-4.right{href: "mailto:me@praveenperera.com", target: "_self"}
+              &nbsp
+              %i.medium.fa.fa-envelope-o
+            %a.grey-text.text-lighten-4.right{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
+              &nbsp
+              %i.medium.fa.fa-linkedin
+            %a.grey-text.text-lighten-4.right{href: "http://github.com/praveenperera"}
+              &nbsp
+              %i.medium.fa.fa-github
+        .row.center.no-bottom-margin.hide-on-med-and-up
+          .col.s12.l6.m6
+            %span.white-text © Copyright Praveen Perera, <%= Date.utc_today().year %>. All rights reserved.
+          .col.s12.l6.m6.footer-icons
+            %a.grey-text.text-lighten-4.center{href: "http://github.com/praveenperera"}
+              &nbsp
+              %i.medium.fa.fa-github
+            %a.grey-text.text-lighten-4.center{href: "https://www.linkedin.com/pub/praveen-perera/64/687/85b"}
+              &nbsp
+              %i.medium.fa.fa-linkedin
+            %a.grey-text.text-lighten-4.center{href: "mailto:me@praveenperera.com", target: "_self"}
+              &nbsp
+              %i.medium.fa.fa-envelope-o
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
