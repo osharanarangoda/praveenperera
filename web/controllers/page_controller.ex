@@ -10,7 +10,7 @@ defmodule Praveenperera.PageController do
       message["name"],
       message["email"],
       message["company"],
-      message["text"]
+      message["message"]
     )
 
     conn |> send_resp(201, "Success")
