@@ -30,7 +30,7 @@ defmodule Praveenperera.Endpoint do
     Corsica,
     allow_headers: ["content-type"],
     origins:
-      ~w(http://lankanovels.com http://www.lankanovels.com https://praveenperera.com https://avencera.com http://localhost:8080)
+      ~w(http://lankanovels.com http://www.lankanovels.com https://praveenperera.com https://avencera.com)
   )
 
   plug(
