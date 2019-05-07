@@ -30,7 +30,8 @@ defmodule Praveenperera.PageController do
     Praveenperera.OshieMailer.send_contact_email(
       message["name"],
       message["email"],
-      message["number"]
+      message["number"],
+      message["country"]
     )
 
     conn |> send_resp(201, "Success")
